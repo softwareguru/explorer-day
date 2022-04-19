@@ -1,0 +1,67 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "/static/images/uploads" # Folder where user uploaded files should go
+public_folder: "/images/uploads"
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "sessions" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Session" # Used in the UI, ie.: "New Post"
+    folder: "/content/sessions/2021" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "ID", name: "id", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Speakers", name: "speakers", widget: "relation", multiple: true, collection: "speakers", search_fields: ["title"], value_field: "title", required: false }
+      - {label: "Start time", name: "time_start", widget: "datetime", required: false}
+      - {label: "End time", name: "time_end", widget: "datetime", required: false}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Summary", name: "summary", widget: "text", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "speakers"
+    label: "Speaker"
+    folder: "/content/speakers"
+    path: "{{slug}}/index"
+    media_folder: "/static/images/speakers/"
+    public_folder: "/images/speakers"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Designation", name: "designation", widget: "string", required: false}
+      - {label: "Photo", name: "image", widget: "image", required: false}
+      - {label: "Twitter url", name: "twitter", widget: "string", required: false}
+      - {label: "LinkedIn url", name: "linkedin", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "/content/about.md"
+        label: "Acerca de"
+        name: "Acerca de Data Day"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Body, name: body, widget: markdown}
+      - file: "/content/faq.md"
+        label: "Preguntas Frecuentes"
+        name: "Preguntas Frecuentes"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Body, name: body, widget: markdown}
+      - file: "/content/diversidad.md"
+        label: "Diversidad"
+        name: "Diversidad"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Body, name: body, widget: markdown}
+      - file: "/content/coc.md"
+        label: "Código de conducta"
+        name: "Código de conducta"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Body, name: body, widget: markdown}
+            

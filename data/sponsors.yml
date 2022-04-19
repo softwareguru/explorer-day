@@ -1,0 +1,71 @@
+
+title: "Patrocinadores"
+subtitle: "DataDay(s) es posible gracias al apoyo de"
+
+sponsor_group:
+
+
+- title : "platinum"
+  sponsor:
+    - logo : "/images/sponsors/microsoft.png"
+      link : "https://www.microsoft.com/es-mx/"
+
+    - logo : "/images/sponsors/Softtek.png"
+      link : "https://www.softtek.com/Jobs"
+
+- title : "gold"
+  sponsor: 
+    - logo : "images/sponsors/nvidia_DD.png"
+      link : "https://www.nvidia.com/es-la/"
+    - logo : "images/sponsors/Escuela de Gobierno_Tecnológico de Monterrey.png"
+      link : "https://escueladegobierno.itesm.mx/"
+    - logo : "images/sponsors/DataDay_Oracle.png"
+      link : "https://www.oracle.com/mx/cloud/"
+    - logo : "images/sponsors/elastic.png"
+      link : "https://www.elastic.co/es/"
+
+
+- title : "silver"
+  sponsor:
+    - logo : "images/sponsors/rstudio.png"
+      link : "https://www.rstudio.com/"
+    - logo : "images/sponsors/Logos UP.png"
+      link : "https://posgradosingenierias.up.edu.mx/"
+    - logo : "images/sponsors/vinkos.png"
+      link : "https://vinkos.com/"
+    - logo : "images/sponsors/datapub.png"
+      link : "https://twitter.com/thedatapub"
+    - logo : "images/sponsors/Pack.png"
+      link : "https://www.packtpub.com/"
+    - logo : "images/sponsors/Manning.png"
+      link : "https://www.manning.com/"
+
+
+- title : "community"
+  sponsor:
+    - logo : "images/sponsors/wid.png"
+      link : "https://www.linkedin.com/company/women-in-data-science-power-and-engineering/?originalSubdomain=do"
+    - logo : "images/sponsors/dsmty.png"
+      link : "https://www.facebook.com/groups/469523539899326"
+    - logo : "images/sponsors/Logo_amiti.png"
+      link : "https://amiti.org.mx/"
+    - logo : "images/sponsors/Cientificas de Datos.png"
+      link : "https://www.facebook.com/cientificasdedatos"
+    - logo : "images/sponsors/Data Enginer Latam.png"
+      link : "https://twitter.com/DataEngiLATAM?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+    - logo : "images/sponsors/Tacos de Datos.png"
+      link : "https://old.tacosdedatos.com/"
+    - logo : "images/sponsors/Nancy.png"
+      link : "https://www.nancynsalazar.tech/"
+    - logo : "images/sponsors/wbds.png"
+      link : "https://wbds.la/"
+    - logo : "images/sponsors/Woman in Data Lima.png"
+      link : "https://www.widslima.org/"
+    - logo : "images/sponsors/Sociedat.png"
+      link : "https://sociedat.org/"
+    - logo : "images/sponsors/prosoftware.png"
+      link : "http://www.prosoftware.org.mx/"
+    - logo : "images/sponsors/CodeandoMexico.png"
+      link : "https://www.codeandomexico.org/"
+    - logo : "images/sponsors/SocialTic.png"
+      link : "https://socialtic.org/"

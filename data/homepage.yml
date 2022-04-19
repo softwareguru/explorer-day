@@ -1,0 +1,65 @@
+############################# banner ################################
+banner:
+  enable : true
+  greeting: Bienvenido a
+  title : "Data Day(s) 2022"
+  tagline: "Analizando los datos como los gurús"
+  meta: "Del 28 de marzo al 1ro de abril de 2022 | Evento online"
+  logo : "/images/logo.svg"
+  venue : ""
+  button1:
+    enable : false
+    label : "Adquiere tu pase"
+    link : "/datadays/tickets"
+  button2:
+    enable : true
+    label : "Adquiere tu pase"
+    link : "/tickets"
+
+
+############################## Event ##############################
+event_info:
+  enable : true
+  features: 
+    - label : "¿Qué es Data Day(s)?"
+      text : "Data Days serán 5 días de conferencias y workshops dirigido a personas involucradas en el procesamiento y análisis de datos en contextos empresariales."
+      icon-class: "fa fa-info" 
+      cta_text: "Conoce más"
+      cta_link: "http://sg.com.mx/datadays/about-us/"
+    - label : "¿Quiénes deben participar?"
+      text : "Todos los involucrados en el análisis, gestión y procesamiento de datos: data analysts, data scientists, data managers."
+      icon-class: "fa fa-group" 
+      cta_text: "Quiero participar"
+      cta_link: "http://sg.com.mx/datadays/tickets/"
+    - label : "¿Cuál será el contenido?"
+      text : "Durante Data Day(s) Virtual  trataremos temas como: modelado predictivo, machine learning, procesamiento de lenguaje natural, visualización y procesamiento de datos, entre otros temas."
+      icon-class: "fa fa-table" 
+      cta_text: "Ver agenda de sesiones"
+      cta_link: "http://sg.com.mx/datadays/agenda/"
+
+####################### Timer #############################
+timer:
+  enable : false
+
+####################### CTA #############################
+cta:
+  enable : true
+  message: "DataDay(s) es el congreso para profesionistas de datos de habla hispana interesados en prácticas y herramientas de clase mundial."
+  label: No dejes pasar esta oportunidad
+  link: https://sg.com.mx/datadays/tickets
+  
+
+####################### pricing #############################
+pricing:
+  enable : false
+
+####################### sponsors #############################
+sponsors:
+  enable : true
+
+
+datalive:
+  enable : true
+  title : "Noticias recientes"
+  content : "Accusantium provident suscipit dicta magni dolor deserunt nam obcaecati non veritatis optio."
+  # blog content comes from "content/blog" folder

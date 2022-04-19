@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<!-- News Section -->
+<section class="news-section">
+    <div class="anim-icons">
+    </div>
+
+    <div class="container">
+     <br>
+     <div class="row">
+      {{ range .Data.Pages }}
+      <div class="col-sm-6">
+        {{ .Render "post" }}
+      </div>
+      {{ end }}
+    </div>
+    </div>
+</section>
+
+
+<!--End News Section -->
+
+{{ end }}

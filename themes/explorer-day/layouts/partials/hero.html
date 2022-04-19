@@ -1,0 +1,31 @@
+{{ $data := index .Site.Data }}
+
+<!-- banner -->
+{{ with $data.homepage.banner }}
+<section class="section banner">
+  <div class="auto-container">
+    <div class="hero-info">
+      {{ with .greeting }}<h2>{{ . }}</h2>{{ end }}
+      {{ with .title }}<h1>{{ . }}</h1>{{ end }}
+      {{ with .tagline }}<h3>{{ . }}</h3>{{ end }}
+      {{ with .meta }}<h3>{{ . }}</h3>{{ end }}
+    </div>
+
+    {{ if .button1.enable }}
+    {{ with .button1 }}
+    <a href="{{ .link | relURL }}" target="_blank" class="theme-btn btn-style-two"><span
+        class="btn-title">{{ .label }}</span></a>
+    {{ end }}
+    {{ end }}
+
+    {{ if .button2.enable }}
+    {{ with .button2 }}
+    <a href="{{ .link | relURL }}" target="_blank" class="btn btn-banner2 mt-3 ml-4">{{ .label }}</a>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+<!-- /banner -->
+
+
