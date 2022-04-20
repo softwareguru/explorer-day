@@ -65,8 +65,8 @@ disclaimer = ""
 # Navigation button
 [params.navigation_button]
 enable = true
-label = "Live"
-link = "/explorer-day/live/"
+label = "Registro"
+link = "#"
 
 
 ############################# social icon ############################
