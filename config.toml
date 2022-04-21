@@ -5,7 +5,7 @@ title = "SG Explorer Day"
 enableRobotsTXT = true
 RemovePathAccents = true
 
-theme = "docsy"
+theme = "explorerday"
 # post pagination
 paginate = "10"
 
