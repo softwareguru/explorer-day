@@ -12,5 +12,6 @@ blocks:
 
 ---
 
+# Agenda de sesiones
 
-<p>Los horarios deben mostrarse en tu horario local.</p>
+Los horarios deben mostrarse en tu horario local.

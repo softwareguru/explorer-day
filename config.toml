@@ -1,20 +1,27 @@
 
 ######################## default configuration ####################
-baseURL = "https://sg.com.mx/explorer-day"
-title = "Explorer Day"
+baseURL = "https://sg.com.mx/explorerday/"
+title = "SG Explorer Day"
 enableRobotsTXT = true
 RemovePathAccents = true
 
-#googleAnalytics = "UA-21077034-25"
-
-theme = "explorer-day"
+theme = "docsy"
 # post pagination
 paginate = "10"
 
 [taxonomies]
-tag = "tags"
-category = "categories"
 speaker = "speakers"
+
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 80
+anchor = "smart"
+
+[blackfriday]
+plainIDAnchors = true
+hrefTargetBlank = true
+angledQuotes = false
+latexDashes = true
 
 # output
 [outputs]
@@ -23,8 +30,12 @@ home = ["HTML", "RSS"]
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = true     
 
+[services]
+[services.googleAnalytics]
+# Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
+id = "UA-00000000-0"
 
 ############################## navigation ###############################
 [menu]
@@ -49,18 +60,26 @@ home = ["HTML", "RSS"]
 
 #################### default parameters ################################
 [params]
-logo = "images/SG-EXPLORER DAY_logo.png"
+logo = "/images/logo-simple.svg"
 home = "Home"
 
 # Meta data
-description = "Explorer Day"
-image = "images/card-2022.jpg"
-images = ["images/card-2022.jpg"]
+description = "SG Explorer Day"
+image = "images/card.jpg"
+images = ["images/card.jpg"]
 twitter_user = "@revistasg"
 email = "eventos@sg.com.mx"
 author = "Software Guru"
 
+start_date = "2022-05-17T10:00-05:00"
+end_date = "2022-05-17T17:00-05:00"
+
 disclaimer = ""
+
+[params.ui]
+breadcrumb_disable = true
+footer_about_disable = false
+navbar_translucent_over_cover_disable = false
 
 # Navigation button
 [params.navigation_button]
@@ -88,16 +107,25 @@ icon = "tf-ion-android-mail"
 link = "mailto:eventos@sg.com.mx"
 
 
+[[params.links.media]]
+    name = "Check us on LinkedIn"
+    url = "https://www.linkedin.com/company/softwareguru"
+    icon = "fab fa-linkedin-in"
+[[params.links.media]]
+    name = "Watch us on YouTube"
+    url = "https://www.youtube.com/c/softwareguru"
+    icon = "fab fa-youtube"
+
+[[params.links.footer]]
+    name = "Código de conducta"
+    url = "/explorerday/coc"
+[[params.links.footer]]
+    name = "Política de privacidad"
+    url = "/explorerday/politica-de-privacidad"
+
+
 ############################# Plugins ##############################
 # CSS Plugins
-[[params.plugins.css]]
-link = "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-[[params.plugins.css]]
-link ="/plugins/color-switcher-design/color-switcher-design.css"
-[[params.plugins.css]]
-link = "/plugins/themefisher-font/themefisher-font.min.css"
-[[params.plugins.css]]
-link = "/plugins/flaticon/flaticon.css"
 [[params.plugins.css]]
 link = "https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.css"
 
@@ -107,11 +135,6 @@ link = "https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.css"
 [[params.plugins.js]]
 link = "https://code.jquery.com/jquery-3.5.1.slim.min.js" 
 
-[[params.plugins.js]]
-link="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-
-[[params.plugins.js]]
-link="https://kit.fontawesome.com/2e09285ae6.js"
 
 [[params.plugins.js]]
 link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
