@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+
+<!-- Speakers Section -->
+<div class="container">
+  {{ .Content }}
+
+  <div class="speaker-strip">
+    {{ range where .Pages.ByTitle ".Params.explorer-day" true }}
+    <div class="speaker-item text-center">
+      <div class="headshot mb-2">
+        <a href="{{ .Permalink }}">
+          <img src="{{ .Params.Image | relURL }}" alt="" class="img-fluid speaker rounded-circle">
+        </a>
+
+      </div>
+      <div class="info">
+        <h4 class="name"><a href="{{.Permalink | relURL }}">{{ .Title }}</a></h4>
+        <p class="designation">{{ .Params.Designation}}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+<!-- End Speakers Section -->
+
+{{ end }}

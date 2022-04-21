@@ -1,0 +1,39 @@
+<div id="schedule-home" class="pt-5">
+<div class="container">
+  <div class="schedule-block">
+    <h2>Agenda de sesiones</h2>
+      <h3><span id="date-1">Martes 17 de mayo</span></h3>
+      <div class="session-list">
+          {{ range sort (where $.Site.RegularPages "Section" "sessions")  ".Params.time_end" }}
+          <div class="session-item {{ with .Params.track }}{{ . }}{{end}}">
+              <div id="time-{{.Params.id}}" class="session-time">
+              </div>
+              <div class="session-info">
+                  <h4><a class="session-title" data-toggle="collapse" href="#abs-{{.Params.id}}">{{ .Params.title }}</a>{{ with .Params.language }}{{ if eq . "chinese" }} (Chinese){{ end }}{{ end }}</h4>
+                  {{ with .Params.speakers }}<p class="speakers-list mb-2">por {{ delimit . ", " " & " }}</p>{{ end }}
+                  <div class="collapse card-abstract" id="abs-{{.Params.id}}">
+                    {{ .Summary }}
+                      <div><a href="{{.Permalink}}">Leer más ...</a></div>
+                  </div>
+              </div>
+          </div>
+          {{ end }}
+      </div>
+  </div>
+</div>
+</div>
+<script>
+  function adjTime(elemId, timeStart, timeEnd) {
+      let dateStart = new Date(Date.parse(timeStart));
+      let dateEnd = new Date(Date.parse(timeEnd));
+      let adjString = dateStart.getHours()+":"+(('0'+dateStart.getMinutes()).slice(-2))+"-"+dateEnd.getHours()+":"+(('0'+dateEnd.getMinutes()).slice(-2));
+      document.getElementById(elemId).innerHTML=adjString;
+  }
+    {{ range sort (where $.Site.RegularPages "Section" "sessions") ".Params.time_start" }}
+      {{ $time_start := .Params.time_start | time  }}
+      {{ $time_end := .Params.time_end | time  }}
+      adjTime("time-{{ .Params.id }}", "{{ $time_start.Format "02 Jan 2006 15:04:05 MST" }}", "{{ $time_end.Format "02 Jan 2006 15:04:05 MST" }}");
+    {{ end }}  
+
+</script>
+

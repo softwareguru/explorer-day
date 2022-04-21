@@ -1,0 +1,12 @@
+/*
+
+Nothing defined here. The Hugo project that uses this theme can override theme variables by adding a file to:
+
+assets/scss/_variables_project.scss
+
+*/
+
+$primary: #1d4200;
+$primary-light: lighten($primary, 75%) !default;
+$secondary: #ff9d00;
+$light: #d0d0d0;
