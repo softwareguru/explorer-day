@@ -2,7 +2,7 @@
 <div class="container">
   <div class="schedule-block">
     <h2>Agenda de sesiones</h2>
-      <h3><span id="date-1">Martes 17 de mayo</span></h3>
+      <h3><span id="date-1">Martes 20 de mayo</span></h3>
       <div class="session-list">
           {{ range sort (where $.Site.RegularPages "Section" "sessions")  ".Params.time_end" }}
           <div class="session-item {{ with .Params.track }}{{ . }}{{end}}">

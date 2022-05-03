@@ -30,7 +30,7 @@ linkTitle: "SG Explorer Day"
 
 SG Explorer Day es un evento online y gratuito enfocado en acercar a los participantes a herramientas y plataformas modernas que les faciliten construir soluciones digitales de nueva generación.
 
-Se realizará el próximo martes 17 de mayo y estará enfocado en herramientas de Oracle para acelerar el desarrollo de aplicaciones móviles sofisticadas, así como para facilitar la gestión de infraestructura en la nube.
+Se realizará el próximo martes 20 de mayo y estará enfocado en herramientas de Oracle para acelerar el desarrollo de aplicaciones móviles sofisticadas, así como para facilitar la gestión de infraestructura en la nube.
 
 {{% /blocks/lead %}}
 
