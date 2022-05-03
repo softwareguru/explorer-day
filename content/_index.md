@@ -14,11 +14,11 @@ linkTitle: "SG Explorer Day"
 		<div class="col-11 col-md-6">
 			<h2 class="text-white">Acompáñanos a explorar nuevas herramientas para construir software de alto desempeño.</h2>
 			<div class="d-flex justify-content-center">
-			<h5 class="bg-secondary text-white py-2 px-3">17 de mayo de 2022. Evento online.</h5>
+			<h5 class="bg-secondary text-white py-2 px-3">20 de mayo de 2022. Evento online.</h5>
 			</div>
 		</div>
 	</div>	
-    <a class="btn btn-primary px-3 pt-3 pb-2 mb-5" href="/explorerday/registro"><h3>Regístrate</h3></a>
+    <a class="btn btn-primary px-3 pt-3 pb-2 mb-5" target="_blank" href="https://sg1.run/sgexplorerday"><h3>Regístrate</h3></a>
 </div>
 
 

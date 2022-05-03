@@ -4,13 +4,13 @@ banner:
   greeting: 
   title : "SG Explorer Day"
   tagline: "Presentado por Oracle"
-  meta: "17 de Mayo de 2022 | Evento online"
+  meta: "20 de Mayo de 2022 | Evento online"
   logo : "/images/logo.svg"
   venue : ""
   button1:
     enable : false
     label : "Registro"
-    link : "#"
+    link : ""
   button2:
     enable : true
     label : "¡Quiero Registrarme!"

@@ -85,7 +85,7 @@ navbar_translucent_over_cover_disable = false
 [params.navigation_button]
 enable = true
 label = "Registro"
-link = "#"
+link = "https://sg1.run/sgexplorerday"
 
 
 ############################# social icon ############################
