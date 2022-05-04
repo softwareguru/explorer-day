@@ -18,7 +18,7 @@ linkTitle: "SG Explorer Day"
 			</div>
 		</div>
 	</div>	
-    <a class="btn btn-primary px-3 pt-3 pb-2 mb-5" target="_blank" href="https://sg1.run/sgexplorerday"><h3>Regístrate</h3></a>
+    <a class="btn btn-primary px-3 pt-3 pb-2 mb-5" href="/explorerday/registro"><h3>Regístrate</h3></a>
 </div>
 
 
