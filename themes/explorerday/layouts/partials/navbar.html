@@ -22,7 +22,7 @@
 			{{ with .Site.Params.navigation_button }}
 			<li>
 			  <a href="{{ .link | relURL }}"
-			  class="btn btn-secondary px-3 rounded-0">{{ .label }}</a>
+			  class="btn btn-secondary px-3 rounded-0" target="_blank">{{ .label }}</a>
 			</li>
 			{{ end }}  
 			{{ if  (gt (len .Site.Home.Translations) 0) }}
