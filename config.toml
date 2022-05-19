@@ -52,6 +52,11 @@ id = "UA-00000000-0"
   weight = 3
 
   [[menu.main]]
+  name = "Networking"
+  URL = "networking"
+  weight = 4
+
+  [[menu.main]]
   name = "FAQ"
   URL = "faq"
   weight = 6
