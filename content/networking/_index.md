@@ -29,7 +29,7 @@ Participa en la dinámica para llevarte un regalo sorpresa que Oracle tiene para
 <div class="row row-cols-1 row-cols-md-2">
   <div class="col mb-4">
     <div class="card h-100">
-      <!--<img src="/explorerday/images/networking/Meetups RobotsLatam - Youtube.png" class="card-img-top" alt="...">-->
+      <img src="/explorerday/images/networking/slack.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Únete a la conversación</h5>
         <p class="card-text">Uniéndote al Slack del evento podrás tener contacto directo con los ponentes e intercambiar ideas con otros colegas.</p>
@@ -40,7 +40,7 @@ Participa en la dinámica para llevarte un regalo sorpresa que Oracle tiene para
   </div>
   <div class="col mb-4">
     <div class="card h-100">
-      <!--<img src="/explorerday/images/networking/Meetups RobotsLatam - Youtube.png" class="card-img-top" alt="...">-->
+      <img src="/explorerday/images/networking/evaluacion.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Evaluación</h5>
         <p class="card-text">¡Danos tu opinión y ayúdanos a mejorar!
