@@ -41,20 +41,25 @@ id = "UA-00000000-0"
 [menu]
 
 
+  #[[menu.main]]
+  #name = "Agenda"
+  #URL = "agenda"
+  #weight = 2
+
   [[menu.main]]
-  name = "Agenda"
-  URL = "agenda"
-  weight = 2
+  name = "Sesiones"
+  URL = "sesiones"
+  weight = 1
 
   [[menu.main]]
   name = "Conferencistas"
   URL = "speakers"
   weight = 3
 
-  [[menu.main]]
-  name = "Networking"
-  URL = "networking"
-  weight = 4
+  #[[menu.main]]
+  #name = "Networking"
+  #URL = "networking"
+  #weight = 4
 
   [[menu.main]]
   name = "FAQ"
@@ -131,17 +136,6 @@ link = "mailto:eventos@sg.com.mx"
 
 ############################# Plugins ##############################
 # CSS Plugins
-[[params.plugins.css]]
-link = "https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.css"
 
-
-
-# JS Plugins
-[[params.plugins.js]]
-link = "https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-
-
-[[params.plugins.js]]
-link="https://unpkg.com/bootstrap-table@1.18.2/dist/bootstrap-table.min.js"
 
 

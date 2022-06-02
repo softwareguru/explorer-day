@@ -6,12 +6,13 @@
         {{ .Content }}
     </p>
 
-    <table data-toggle="table" data-search="true" data-search-align="left">
+    <table class="table" data-toggle="table" data-search="true" data-search-align="left"
+    style="border-collapse: separate; border-radius: 10px; padding: 10px;">
         <thead>
           <tr>
             <th data-field="title">Título</th>
             <th data-field="speaker">Speaker(s)</th>
-          
+            <th data-field="recording">Grabación</th>
           </tr>
         </thead>
         <tbody>
@@ -19,11 +20,16 @@
     <tr>
         <td><a class="session-title" href="{{.Permalink}}">{{ .Params.title }}</a></td>
         <td>{{ with .Params.speakers }}{{ delimit . ", " " & " }}{{ end }}</td>
-        
+        <td class="text-center">{{ with .Params.video }}<a
+          href='{{ replace . "https://www.youtube.com/embed" "https://youtu.be" }}' target="_blank"><i
+              class="fab fa-youtube" aria-hidden="true" title="Watch"></i></a>{{ end }}</td>
     </tr>    
     {{ end }}
     </tbody>
     </table>
 </div>
+
+
+
 
 {{ end }}
